@@ -1,38 +1,31 @@
-package session16_Kha1;
+package session15_Gioi2;
 
 public class Product {
-    private int id;
     private String name;
     private double price;
 
-    public Product(int id, String name, double price) {
-        this.id = id;
+    public Product(String name, double price) {
         this.name = name;
         this.price = price;
-    }
-    public int getId() {
-        return id;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
     }
 
     public void setPrice(double price) {
         this.price = price;
     }
-
     @Override
     public String toString() {
-        return String.format("ID: %d | Tên: %s | Giá: %.2f", id, name, price);
+        return "Sản Phẩm: "+ name + " | Giá: "+ price;
     }
 }
-
